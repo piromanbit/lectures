@@ -66,7 +66,7 @@ $$\exists \frac{d}{d\alpha} \left( J\left[y_0 + \alpha \cdot \delta y\right] \mi
     Но $\left(f'\left(0\right) = \delta J\left[y_0\right]\right)$. Тогда: $\delta J\left[y_0\right] = 0$
 
 Аналогично доказывается для максимума.
-$\square$
+□
 
 <u>Замечание:</u> <u>Т1</u> является необходимым условием для слабого экстремума, а следовательно, и для сильного экстремума.
 
