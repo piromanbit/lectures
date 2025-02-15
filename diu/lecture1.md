@@ -53,7 +53,8 @@ $\left\{y\left(x\right) \in V \mid ||y\left(x\right) - y_0\left(x\right)|| < \ep
 <u>Т1</u> (Необходимое условие экстремума)
     (Функционал $J\left[y\right]$ достигает экстремума во внтуренней точке $y_0$ множества $M$) $\implies$ ($\delta J\left[y_0\right] = 0$)
 
-$\Delta$: Пусть для определенности достигается $\min$, тогда:
+$\Delta$:
+> Пусть для определенности достигается $\min$, тогда:
 > $\exists U_\epsilon \left(y_0\right)$: $\forall y\left(x\right) \in U_\epsilon  \left(y_0\right) \implies J\left[y\right] \geq J\left[y_0\right]$
 > Пусть $\delta y$ - произвольное приращение (допустимое). Возьмем $\alpha>0$: $|\alpha| < \frac{\epsilon}{||\delta y||}$
 > Тогда: $J\left[y_0 + \alpha \cdot \delta y\right] \geq J\left[y_0\right]$
