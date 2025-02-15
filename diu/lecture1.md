@@ -54,18 +54,19 @@ $\left\{y\left(x\right) \in V \mid ||y\left(x\right) - y_0\left(x\right)|| < \ep
     (Функционал $J\left[y\right]$ достигает экстремума во внтуренней точке $y_0$ множества $M$) $\implies$ ($\delta J\left[y_0\right] = 0$)
 
 $\Delta$: Пусть для определенности достигается $\min$, тогда:
-    $\exists U_\epsilon \left(y_0\right)$: $\forall y\left(x\right) \in U_\epsilon  \left(y_0\right) \implies J\left[y\right] \geq J\left[y_0\right]$
-    Пусть $\delta y$ - произвольное приращение (допустимое). Возьмем $\alpha>0$: $|\alpha| < \frac{\epsilon}{||\delta y||}$
-    Тогда: $J\left[y_0 + \alpha \cdot \delta y\right] \geq J\left[y_0\right]$
-
-Рассмотрим $f\left(\alpha\right) = J\left[y_0 + \alpha \cdot \delta y\right]$.Тогда
-$$\left(\forall \alpha \left(|\alpha| < \frac{\epsilon}{||\delta y||} \implies f\left(\alpha\right) \geq f\left(0\right)\right)\right) \implies \left(\min f\left(\alpha\right) = f\left(\alpha = 0\right)\right)$$
-    Знаем, что $J\left[y\right]$ дифференцируем в точке $y_0$, т.е.:
+> $\exists U_\epsilon \left(y_0\right)$: $\forall y\left(x\right) \in U_\epsilon  \left(y_0\right) \implies J\left[y\right] \geq J\left[y_0\right]$
+> Пусть $\delta y$ - произвольное приращение (допустимое). Возьмем $\alpha>0$: $|\alpha| < \frac{\epsilon}{||\delta y||}$
+> Тогда: $J\left[y_0 + \alpha \cdot \delta y\right] \geq J\left[y_0\right]$
+>
+> Рассмотрим $f\left(\alpha\right) = J\left[y_0 + \alpha \cdot \delta y\right]$.Тогда
+> $$\left(\forall \alpha \left(|\alpha| < \frac{\epsilon}{||\delta y||} \implies f\left(\alpha\right) \geq f\left(0\right)\right)\right) \implies \left(\min f\left(\alpha\right) = f\left(\alpha = 0\right)\right)$$
+> Знаем, что $J\left[y\right]$ дифференцируем в точке $y_0$, т.е.:
 $$\exists \frac{d}{d\alpha} \left( J\left[y_0 + \alpha \cdot \delta y\right] \mid_{\alpha = 0} \right) \implies \left(\exists f'\left(0\right)\right)$$
-    Из курса математического анализа: $f'\left(0\right) = 0$
-    Но $\left(f'\left(0\right) = \delta J\left[y_0\right]\right)$. Тогда: $\delta J\left[y_0\right] = 0$
+> Из курса математического анализа: $f'\left(0\right) = 0$
+> Но $\left(f'\left(0\right) = \delta J\left[y_0\right]\right)$. Тогда: $\delta J\left[y_0\right] = 0$
+>
+> Аналогично доказывается для максимума.
 
-Аналогично доказывается для максимума.
 □
 
 <u>Замечание:</u> <u>Т1</u> является необходимым условием для слабого экстремума, а следовательно, и для сильного экстремума.
