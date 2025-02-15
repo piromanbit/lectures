@@ -104,3 +104,5 @@ $\Delta$:
 > $$\left(\sqrt[n]{z}\right)_k = \sqrt[n]{|z|} \cdot \left(\cos\frac{\phi + 2\pi k}{n} + i \sin\frac{\phi + 2\pi k}{n}\right), k = 0, 1, ..., n-1$$
 
 □
+
+[продолжение читайте в источнике...](tfcp/lecture2.md)
