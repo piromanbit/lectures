@@ -1,5 +1,4 @@
-## §2. Множества на комплексной плоскости. Последовательности и ряды комплексных чисел.
-
+## §2. Множества на комплексной плоскости.
 $\mathbb{C}$ как множество упорядоченных пар совпадает с $\mathbb{R}^2$
 
 Точки $M_1 \left(x_1, y_1\right)$; $M_2 \left(x_2, y_2\right) \in \mathbb{R}^2$
@@ -71,12 +70,12 @@ $\Delta$:
 
 □
 
-### Последовательности и ряды комплексных чисел. Расширенная комплексная плоскость.
+## §3. Последовательности и ряды комплексных чисел. Расширенная комплексная плоскость.
 
 $\forall n \in \mathbb{N} \rightarrow z_n \in \mathbb{C}$, $\left\{z_n\right\}_{n=1}^{\infty}$, $\left\{z_n\right\}_{n \in \mathbb{N}}$, $\left\{z_n\right\}$
     $z_n =x_n + i y_n$, $\left\{x_n\right\}$, $\left\{y_n\right\}$
 
-<u>Опр.3</u>
+<u>Опр.1</u>
     Пусть $\left\{z_n\right\}_{n \in \mathbb{N}}$, $z_0 \in \mathbb{C}$. Говорят, что $\left\{z_n\right\}$ стремится к $z_0$ при $n \rightarrow \infty$, если
     $\forall \epsilon > 0$ $\exists N \in \mathbb{N}$ $\forall n \in \mathbb{N}$ $\left(n \geq N \implies |z_n - z_0| < \epsilon\right)$
     $\lim_{n \to \infty} z_n = z_0$; $z_n \rightarrow z_0$, $n \rightarrow \infty$
@@ -90,11 +89,11 @@ $z_n \rightarrow z_0$, $w_n \rightarrow w_0$, $n \rightarrow \infty$
     2. $\exists \lim_{n \to \infty} (z_n \cdot w_n) = z_0 \cdot w_0$
     3. Если $\forall n \in \mathbb{N} \cup \left\{0\right\}$ $w_n \neq 0$, то $\exists \lim_{n \to \infty} \frac{z_n}{w_n} = \frac{z_0}{w_0}$ 
 
-<u>Опр.4</u>
+<u>Опр.2</u>
     $\left\{z_n\right\}$ называется ограниченной, если $\exists c > 0$ $\forall n \in \mathbb{N}$ $|z_n| \leq c$
 
-<u>Т2</u> (Больцано-Вейерштрасса)
+<u>Т1</u> (Больцано-Вейерштрасса)
     Если последовательность комплексных чисел $\left\{z_n\right\}$ ограничена, то из нее можно извлечь сходящуюся подпоследовательность.
 
-<u>Опр.5</u>
+<u>Опр.3</u>
     $\left\{z_n\right\} \subset \mathbb{C}$ называется фундаментальной, если $\forall \epsilon > 0$ $\exists N \in \mathbb{N}$ $\forall n, p \in \mathbb{N}$ $\left(n \geq N \implies |z_{n+p} - z_n| < \epsilon\right)$
