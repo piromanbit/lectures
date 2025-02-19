@@ -76,21 +76,21 @@ $$\exists \frac{d}{d\alpha} \left( J\left[y_0 + \alpha \cdot \delta y\right] \mi
 
 ![](lecture1/image1.jpg)
     Рассмотрим $M = \left\{y \in C^1\left(\left\{a;b\right\}\right) : y\left(a\right) = A; y\left(b\right) = B\right\}$
-    Рассмотрим функционал (1) $J\left[y\right] = \int_{a}^{b} F\left(x, y, y'\right) \, dx$
+    Рассмотрим функционал $(1)$ $J\left[y\right] = \int_{a}^{b} F\left(x, y, y'\right) \, dx$
     $F(x, y, p$ - заданная функция, будем считать ее непрерывной.
     Функционал $J\left[y\right]$ называется функционалом с закрепленными концами.
-    Задача нахождения экстремума функционала (1) на множестве $M$ (гладкая кривая с закрепленными концами) называется простейшей задачей вариационного ичисления.
-    Что значит условие $\delta J\left[y\right] = 0$, для функционала (1) с закрепленными концами:
+    Задача нахождения экстремума функционала $(1)$ на множестве $M$ (гладкая кривая с закрепленными концами) называется простейшей задачей вариационного ичисления.
+    Что значит условие $\delta J\left[y\right] = 0$, для функционала $(1)$ с закрепленными концами:
     $y\left(a\right) = A$, $y\left(b\right) = B$
     <u>Замечание:</u>
     1. Все допустимые вариации удовлетворяют условию: $\delta y\left(a\right) = \delta y\left(b\right) = 0$
     2. $\left(\delta y\right)' = \left(\widetilde{y} - y\right)' = \widetilde{y}' - y' = \delta y'$
     
 Рассмотрим вариацию по Гато:
-    $\frac{d}{d\alpha} \left( J\left[y + \alpha \cdot \delta y\right] \right) = \frac{d}{d \alpha} \left( \int_{a}^{b} F\left(x, y + \alpha \cdot \delta y, y' + \alpha \cdot \delta y'\right) \, dx \right) =$ (2)
+    $\frac{d}{d\alpha} \left( J\left[y + \alpha \cdot \delta y\right] \right) = \frac{d}{d \alpha} \left( \int_{a}^{b} F\left(x, y + \alpha \cdot \delta y, y' + \alpha \cdot \delta y'\right) \, dx \right) =$ $(2)$
     Будем считать, что $F\left(x, y, p\right)$ непрерывна с частными производными до 2-ого порядка.
     $J$ - собственный интеграл, зависящий от параметра, тогда:
-    (2) $= \int_{a}^{b} \left(F_y ' \left(x, y + \alpha \cdot\delta y, y' + \alpha \cdot \delta y\right) \delta y + F_p ' \left(x, y + \alpha \cdot \delta y, y' + \alpha \cdot \delta y'\right) \delta y'\right)\, dx$
+    $(2)$ $= \int_{a}^{b} \left(F_y ' \left(x, y + \alpha \cdot\delta y, y' + \alpha \cdot \delta y\right) \delta y + F_p ' \left(x, y + \alpha \cdot \delta y, y' + \alpha \cdot \delta y'\right) \delta y'\right)\, dx$
     Рассмотрим второй интеграл:
     $\int_{a}^{b} F_p ' \left(x, y + \alpha \cdot \delta y, y; + \alpha \cdot \delta y'\right)\left(\delta y\right)' \, dx = F_p '\left(x, y + \alpha \cdot \delta y, y' + \alpha \delta y'\right) \delta y \mid_a^b - \int_{a}^{b} \delta y \cdot \frac{d}{dx} \left( F_p ' \left(x, y +\alpha \cdot \delta y, y' + \alpha \delta y'\right) \right) \, dx$
     Тогда (2) $= \int_{a}^{b} \left(F_y '\left(x, y + \alpha \cdot \delta y, y' + \alpha \cdot \delta y'\right) - \frac{d}{dx} \left( F_p '\left(x, y + \alpha \cdot \delta y, y' + \alpha \cdot \delta y'\right) \right)\right) \cdot \delta y \, dx$
@@ -98,6 +98,53 @@ $$\exists \frac{d}{d\alpha} \left( J\left[y_0 + \alpha \cdot \delta y\right] \mi
 Полагаем, что $\alpha = 0$. Тогда:
     $\int_{a}^{b} \left(F_y '\left(x, y, y'\right) - \frac{d}{dx} \left( F_p ' \left(x, y, y'\right) \right)\right) \delta y \, dx = 0$
     Отсюда получаем следующее:
-    $F_y ' \left(x, y, y'\right) - \frac{d}{dx} \left( F_p ' \left(x, y, y'\right) \right) = 0$
+    $F_y ' \left(x, y, y'\right) - \frac{d}{dx} \left( F_p ' \left(x, y, y'\right) \right) = 0$ $(3)$
     Обоснуем этот переход ниже:
-# to be continued...
+
+<u>Лемма:</u> (Основная лемма вариационного исчисления)
+    Пусть $\phi (x) \in C([a;b])$ и $\forall h(x) \in C^1 ([a;b])$ $h(a)=h(b)=0$ выполняется:
+    $$\int_{a}^{b} \phi (x) h(x) \, dx = 0,$$
+    тогда: $\phi (x) \equiv 0$ на $[a;b]$.
+
+$\Delta$:
+> Предположим противное: $\phi(x) \neq 0$, для определенности(без ограничения общности(БОО)) будем считать, что $\phi (x_0) > 0$.
+> В силу непрерывности:
+> $\exists U_\epsilon (x_0) \subset [a;b]$ $\phi (x) \geq \frac{1}{2}\phi (x_0)$
+> В таком случае рассмотрим следующую функцию:
+> $h(x) > 0$, $x \in U_\epsilon (x_0)$; $h(x) \equiv 0$, $x \notin U_\epsilon (x_0)$
+> Тогда:
+> $\int_{a}^{b} \phi (x) h(x) \, dx = \int_{x_0 - \epsilon}^{x_0 + \epsilon} \phi (x) h(x) \, dx \geq \frac{\phi (x_0)}{2} \int_{x_0 - \epsilon}^{x_0 + \epsilon} h(x) \, dx > 0$ $\implies$ противоречие
+> Таким образом, $\phi (x) \equiv 0$
+
+□
+
+Обоснование перехода в $(3)$:
+
+Возьмём $\phi (x) = F_y ' - \frac{d}{dx} \left( F_p ' \right) = F_y ' - (F_{xp} '' + F_{yp} '' \cdot y' + F_{pp} '' y'')$
+    $\phi (x)$ - непрерывная функция на $[a;b]$, так как $y(x) \in C^2 ([a;b])$.
+    В качестве $h(x) = \delta y \in C^1([a;b])$, тогда по основной лемме ВИ из $(3)$ следует, что: $\phi (x) \equiv 0$, то есть:
+    $F_y ' - \frac{d}{dx} \left( F_p ' \right) = 0$ $(4)$
+    Это уравнение называется уравнением Эйлера.
+    Таким образом, имеет место теорема:
+
+<u>Т1</u> (Необходимое условие экстремума функционала с закрепленными концами)
+    Пусть имеем $(1)$ и $(2)$ и выполнены следующие условия:
+    1. $y(x) \in C^2([a;b])$;
+    2. $y(x)$ реализует экстремум функционала $(1)$
+    3. $F(x, y, p)$ - непрерывна со своими частными производными до второго порядка включительно.
+
+Тогда $y(x)$ - является решением краевой задачи Эйлера(КЗЭ):
+$$
+\begin{cases}
+F_y ' - \frac{d}{dx} \left( F_y ' \right) = 0
+    \\
+    y(a) = A
+    \\
+    y(b) = B
+\end{cases}
+$$
+
+$\Delta$:
+> (б/д)
+
+□
