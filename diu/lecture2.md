@@ -149,3 +149,5 @@ $\Delta$:
     А уравнение Эйлера-Остроградского примет вид:
     $F_z - \frac{\partial}{\partial x} \left( F_p \right) - \frac{\partial}{\partial y} \left( F_q \right) = 0$, где $p = \frac{\partial z}{\partial x} \wedge q = \frac{\partial z}{\partial y}$
     Однако в нашем курсе мы их рассматривать не будем.
+
+[продолжение читайте в источнике...](/diu/lecture3.md)
