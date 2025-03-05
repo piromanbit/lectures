@@ -310,4 +310,79 @@ $$
     $z(x) = \int_{-a}^{x} \sqrt{1 + (y')^2} \, dx \implies z(-a) = 0$, $z(a) = 2l$
     $z'(x) = \sqrt{1 + (y')^2} \implies z' - \sqrt{1 + (y')^2} = 0$ - неголономная связь
 
-# To be continued...
+То есть мы имеем задачу:
+<u>Задача:</u> Найти экстремум функционала $J[y, z] = \int_{-a}^{a} y \, dx$, при условиях закрепления:
+(\*):
+$$
+\begin{cases}
+    y(-a) = y(a) = A
+    \\
+    z(-a) = 0
+    \\
+    z(a) = 2l,
+\end{cases}
+$$
+и неголонмной связью $z' - \sqrt{1 + (y')^2} = 0$
+
+<u>Решение:</u> Тогда, согласно вышеизложенной теории, $y(x)$, $z(x)$ удовлетворяют системе уравнений Эйлера для функционала:
+$$\widetilde{J}[y, z] = \int_{-a}^{a} (y + \lambda(x)(z' - \sqrt{1 + (y')^2})) \, dx$$
+с краевым условием (*).
+
+Систему уравнений Эйлера принимает вид:
+$$
+\begin{cases}
+    1 + \frac{d}{dx} (\lambda(x) \cdot \frac{y'}{ \sqrt{1 + (y')^2} }) = 0
+    \\
+    0 - \frac{d}{dx} \lambda(x) = 0
+\end{cases}
+$$
+Знаем, что в изопериметрической задаче $\lambda(x) = const$ (см. пример), обозначим $\lambda(x) = \lambda$:
+$$\frac{d}{dx}\frac{\lambda y'}{\sqrt{1 + (y')^2}} = -1 \implies \frac{\lambda y'}{\sqrt{1 + (y')^2}} = c_1 - x$$
+$$x = c_1 - \frac{\lambda y'}{\sqrt{1 + (y')^2}}$$
+Введём параметр:
+$y' \equiv p$
+$x = c_1 - \frac{\lambda p}{\sqrt{1 + p^2}}$ (дифференцируем, умножим на $p$)
+$dy = pdx = p\lambda (\sqrt{1 + p^2} - \frac{p^2}{\sqrt{1 + p^2}}) (1 + p^2)^{-1}dp = \frac{\lambda p dp}{(1 + p^2)^{3/2}} \implies dy = \frac{\lambda p dp}{(1 + p^2) ^ {3/2}} \mid$ интегрируем
+$y = \int \frac{\lambda p dp}{(1 + p^2) ^ {3/2}} \, dx = \frac{\lambda}{\sqrt{1 + p^2}} + c_2$
+Значит:
+$x = c_1 - \frac{\lambda p}{\sqrt{1 + p^2}}$, $y = c_2 + \frac{\lambda}{1 + p^2}$
+Исключим $p$:
+$(c_1 - x)^2 + (y - c_2)^2 = \frac{\lambda^2 p^2}{1 + p^2} + \frac{\lambda^2}{1 + p^2} = \lambda^2$
+$(x - c_1)^2 + (y - c_2)^2 = \lambda^2 \implies$ экстремалями являются окружности
+
+Для нахождения констант подставим краевые условия:
+$$
+\begin{cases}
+    (a + c_1)^2 + (A - c_2)^2 = \lambda^2
+    \\
+    (a - c_1)^2 + (A - c_2)^2 = \lambda^2
+\end{cases}
+$$
+$$
+\begin{cases}
+    c_1 = 0
+    \\
+    c_2 = A \pm \sqrt{\lambda^2 - a^2}
+\end{cases}
+$$
+В итоге получаем:
+![](/diu/lecture3/image7.jpg)
+
+Исследуем случай максимума и найдем $\lambda$:
+
+$y = c_2 + \sqrt{\lambda^2 - x^2} = A - \sqrt{\lambda^2 - a^2} + \sqrt{\lambda^2 - x^2}$
+
+$2l = \int_{-a}^{a} \sqrt{1 + {y'}^2} \, dx = \int_{-a}^{a} \sqrt{1 + \frac{x^2}{\lambda^2 - x^2}} \, dx = \lambda \int_{-a}^{a}  \, \frac{dx}{\sqrt{\lambda^2 - x^2}} = \lambda arcsin \frac{x}{\lambda} \mid_{-a}^a = 2\lambda arcsin \frac{a}{\lambda}$
+
+Значит, $\lambda$ - корень трансцендентного уравнения:
+$arcsin \frac{a}{\lambda} = \frac{a}{\lambda} \cdot \frac{l}{a}$, $\frac{a}{\lambda} = t$
+$arcsin t = t \cdot \frac{l}{a} \implies out$\* - решения
+![](/diu/lecture3/image8.jpg)
+Условие существования решения:
+$\frac{l}{a} \leq \frac{\pi}{2}$ (иначе прямая не пересечет график $arcsin$)
+    Таким образом, при $a < l < \frac{\pi a}{2}$ имеем экстремаль:
+    $y = A - \sqrt{(\frac{a}{t*})^2 - a^2} + \sqrt{(\frac{a}{t*})^2 - x^2}$, 
+    где $t$\* - ненулевое решение уравнения: $arcsin t = \frac{l}{a} t$
+
+Следует отметить, что при $l > \frac{\pi a}{2}$ экстремалями все равно будут окружности (но тогда у нас нет однозначности в задаче)
+![](/diu/lecture3/image9.jpg)
