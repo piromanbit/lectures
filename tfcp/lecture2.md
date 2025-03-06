@@ -97,3 +97,5 @@ $z_n \rightarrow z_0$, $w_n \rightarrow w_0$, $n \rightarrow \infty$
 
 <u>Опр.3</u>
     $\left\{z_n\right\} \subset \mathbb{C}$ называется фундаментальной, если $\forall \epsilon > 0$ $\exists N \in \mathbb{N}$ $\forall n, p \in \mathbb{N}$ $\left(n \geq N \implies |z_{n+p} - z_n| < \epsilon\right)$
+
+[продолжение читайте в источнике...](/tfcp/lecture3.md)

@@ -73,7 +73,7 @@ $$t = 1 - \zeta \longrightarrow z? x = \frac{\xi}{1 - \zeta}; y = \frac{\eta}{1 
     $N \leftrightarrow \infty$ и получим $S$ на $\bar{\mathbb{C}}$
     Такая модель называется сферой Римана.
 
-## §4. Функции комплексной переменной. Предел. Непрерывность.
+### Функции комплексной переменной. Предел. Непрерывность.
 Пусть $E \subset \bar{\mathbb{C}}$, $f: E \longrightarrow \bar{\mathbb{C}}$. $f(z) \longrightarrow w_0$, $z \longrightarrow z_0$, $z \in E$
     $z_0, w_0 \in \mathbb{C}$, $z$ - предельная точка $E$. $\forall \epsilon > 0 \exists \delta > 0 f(\dot{U_\delta}(z_0) \cap E) \subset U_\epsilon (w_0)$
 
@@ -134,3 +134,16 @@ $C(E; \mathbb{C})$
 <u>Утв.2</u>
     Пусть $f: E \longrightarrow \mathbb{C}$, $E \subset \mathbb{C}$, $u(x, y) = Re f(z)$, $v(x, y) = Im f(z)$.
     Тогда $(f \in C(E)) \iff (u \in C(E) \wedge v \in C(E))$
+
+<u>Следствие 1</u> (непрерывность сложной функции)
+    Пусть $f: E \longrightarrow \mathbb{C}$, $E \subset \mathbb{C}$; $f \in C(E)$ и $f(E) \subset D \subset \mathbb{C}$, а $g: D \longrightarrow \mathbb{C}$, $g \in C(D)$. Тогда $\forall z \in E$ определена сложная функция $g(f(z)) \equiv (g \circ f)(z)$ и $g \circ f \in C(E)$.
+
+<u>Следствие 2</u> (ограниченность непрерывной на компакте функции)
+    Пусть $f \in C(E)$, $E$ - компакт. Тогда функция $f$ - ограничена на $E$.
+
+<u>Опр.3</u> (равномерно непрерывная функция комплексного переменного)
+    Пусть $f: E \longrightarrow \mathbb{C}$, $E \subset \mathbb{C}$. Функция $f$ называется равномерно непрерывной на $E$, если $\forall \epsilon > 0 \exists \delta > 0 \forall z_1, z_2 \in E (|z_1 - z_2| < \delta \implies |f(z_1) - f(z_2)| < \epsilon)$
+    ! $(f$ - равномерно непрерывна на $E) \iff (u$ - равномерно непрерывна $\wedge$ $v$ - равномерно непрерывна на $E)$
+    Пусть $E$ - компакт в $\mathbb{C}$($\mathbb{R}^2$). Тогда $(f \in C(E)) \iff (f$ - равномерно непрерывна на $E)$.
+
+[продолжение читайте в источнике...](/tfcp/lecture4.md)
