@@ -101,3 +101,5 @@ $\Delta$:
 > $$\begin{cases} M \hat{\theta_2} = A M \hat{\theta_1} + B \\ D \hat{\theta_2} = A^2 D \hat{\theta_1} \end{cases} \iff \begin{cases} \theta = A \theta + B \\ d = A^2 d \end{cases} \implies \begin{cases} A = 1 \\ B = 0 \end{cases} \implies P(\hat{\theta_1} = \hat{\theta_2}) = 1$$
 
 □
+
+[продолжение читайте в источнике...](/mathstat/lecture2.md)
