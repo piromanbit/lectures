@@ -67,3 +67,5 @@ $\vec{x_n} = \{x_1, x_2, ..., x_n\}$ выборка из генеральной 
     $$\bar{x} = \frac{1}{n} \sum_{i = 1}^n x_i\ \ M \bar{x} = \frac{1}{n}\sum_{i=1}^n Mx_i = M\xi = a \implies \bar{x} - несмещенная$$
     $$D \bar{x} = \frac{1}{n^2} \sum_{i=1}^n Dx_i = \frac{n D\xi}{n^2} = \frac{D\xi}{n} = \frac{\sigma^2}{n}$$
     $$e(\bar{x}) = \frac{\sigma^2}{n} \cdot \frac{n}{\sigma^2} = 1 \implies \bar{x} - эффективная\ оценка$$
+
+[продолжение читайте в источнике...](/mathstat/lecture3.md)
