@@ -32,7 +32,7 @@ $\vec{x_n} = \{x_1, x_2, ..., x_n\}$ выборка из генеральной 
     $$I(\theta, \vec{x_n}) = M\left[\frac{\partial \ln L(\vec{x_n}, \theta)}{\partial \theta}\right]^2 = \int_{x_1} \cdots \int_{x_n} \left[\frac{\partial \ln L(\vec{x_n}, \theta)}{\partial \theta} \right]^2 \cdot L(\vec{x_n}, \theta) \, dx_1 ... dx_n$$
     1. $I(\theta, \vec{x_n}) = n \cdot \int_{x_1}  \left[\frac{\partial \ln p_\xi(x, \theta)}{\partial \theta}\right]^2 p_\xi(x_1, \theta)\, dx_1$ - т.к. $x_1, ..., x_n$ одинаково распределены и взаимно независимы
 
-</u>Пример 1:</u>
+<u>Пример 1:</u>
     $\vec{x_n} = \{x_1, ..., x_n\}$, где $x_i \sim \mathcal{N}(a, \sigma^2)$
     $$I(a, \vec{x_n}) = n \int_{-\infty}^{+\infty} \frac{\partial \ln p_\xi(x, a, \sigma^2)}{\partial a} p_\xi(x, a, \sigma^2) \, dx = (1)$$
     $$p_\xi(x, a, \sigma^2) = \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-a)^2}{2 \sigma^2}}$$
