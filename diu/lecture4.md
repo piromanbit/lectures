@@ -17,7 +17,7 @@ $$
 где $f_i \in C(G)$, $G = [t_0; +\infty) \times D$, $D \in \mathbb{E}^n$
 
 В векторной форме (можно и столбцами):
-$\vec{y} = (y_1, ..., y_n$
+$\vec{y} = (y_1, ..., y_n)$
 $\vec{f} = (f_1(t, \vec{y}), ..., f_n(t, \vec{y}))$
 $(1) \sim \dot{\vec{y}} = \vec{f}(t, \vec{y})$
 Пусть при $t = t_0$:
@@ -34,7 +34,7 @@ $$
 \begin{cases}
     \dot{\vec{y}} = \vec{f}(t, \vec{y}) (1)
     \\
-    \vec{y}(t_0) = \widetilde{\vec{y}}^\circ (3)
+    \vec{y}(t_0) = \widetilde{\vec{y}}^\circ (2)
 \end{cases}
 $$
 Считаем, что выполнены условия <u>Т</u> о существовании и единственности и выполнены условия задачи Коши $(1)$, $(2)$, причем решение $\exists!$ при $t = t_0$.
@@ -111,11 +111,11 @@ $$
 $$
 (1)
 \begin{cases}
-    \dot{y_1} = a_11 y_1 + ... + a_1n y_n
+    \dot{y_1} = a_{11} y_1 + ... + a_{1n} y_n
     \\
     ...
     \\
-    \dot{y_n} = a_n1 y_1 + ... + a_nn y_n
+    \dot{y_n} = a_{n1} y_1 + ... + a_{nn} y_n
 \end{cases}
 $$
 
